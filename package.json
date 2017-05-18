@@ -4,17 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "budo service.js:bundle.js & node server.js & wait",
+    "deploy": "now -e REDIS_HOST=@redis_host REDIS_POST=@redis_post REDIS_PASS=redis_pass",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Mikeal Rogers <mikeal.rogers@gmail.com> (http://www.mikealrogers.com)",
   "license": "Apache-2.0",
   "dependencies": {
+    "body": "^5.1.0",
     "create-torrent": "^3.29.1",
     "inquirer": "^3.0.6",
-    "parse-torrent": "^5.8.3",
+    "json-stream": "^1.0.0",
     "recursive-readdir": "^2.1.1",
+    "response": "^0.18.0",
+    "single-line-log": "^1.1.2",
     "sodi": "^0.3.0",
+    "sos": "^1.4.0",
+    "websocket-stream": "^4.0.0",
     "webtorrent": "^0.98.18",
     "yargs": "^8.0.1"
   },
