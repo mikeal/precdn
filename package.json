@@ -21,7 +21,7 @@
     "single-line-log": "^1.1.2",
     "sodi": "^0.3.0",
     "sos": "^1.4.0",
-    "websocket-stream": "^4.0.0",
+    "websocket-stream": "^5.0.0",
     "webtorrent": "^0.98.18",
     "yargs": "^8.0.1"
   },
